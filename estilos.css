@@ -6,6 +6,15 @@
     margin: 0;
 }
 
+name {
+    grid-area: menu;
+    background-color: #222324;
+    position: sticky;
+    margin: 0px;
+    width: auto;
+    height: auto;
+    z-index: 2;
+}
 menu {
     grid-area: menu;
     background-color: #222324;
@@ -35,7 +44,7 @@ footer {
     background-color: #222324;
     display: flex;
     flex-wrap: wrap;
-    z-index: 1;
+    z-index: 2;
 }
 
 left1 {
@@ -86,7 +95,7 @@ right2 {
         "main"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 90vh 0fr;
+    grid-template-rows: 1fr 80vh 0fr;
 }
 
 .grid-container>* {
@@ -177,6 +186,10 @@ a:hover {
 
 .main_background_Image {
     background-image: url(images/backiee-57694_12.jpg);
+}
+
+.sitemap_image{
+    background-image: url(images/sitemap.drawio.svg);
 }
 
 .motivational_header {
