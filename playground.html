@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Miguel Soares">
-    <meta name="description" content="Lab 5: Portfólio">
+    <meta name="description" content="Lab 5: Portfólio - Web development">
     <meta name="keywords" content="palavras chave">
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/x-icon" href="images/MS9.png" sizes="any">
@@ -23,12 +23,10 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa5f8f8cfb.js" crossorigin="anonymous"></script>
-
-    
 </head>
 
 <body>
-    <div class="grid-container-hero">
+    <div class="grid-container">
         <name class="name-container">
             <p class="name-style">MIGUEL SOARES</p>
         </name>
@@ -37,10 +35,9 @@
                 <a href="/index.html">HOME</a>
                 <div class="dropdown">
                     <button class="dropbtn">
-                        <a href="#">ABOUT ME</a>
+                        <a href="/index.html#aboutMe">ABOUT ME</a>
                     </button>
                     <div class="dropdown-content">
-                        <a href="/index.html#aboutMe">ABOUT ME HOME</a>
                         <a href="/index.html#projects">PROJECTS</a>
                         <a href="/courses.html">COURSES</a>
                         <a href="/images/MIGUELSOARES_RESUME_EN_2023.pdf" target="blank_">RESUME</a>
@@ -54,74 +51,64 @@
             <button><span class="fa-solid fa-moon theme-button" id="darkModeBtn"></span></button>
         </menu>
 
-        <main class="backgroung-image">
-            <div class="motivational_header">
-                <h2>Hi! I'M MIGUEL</h2>
-                <div class="motivational_text">
-                    <p><b>Analyzing and visualizing data to make better and informed business decisions.</b></p></br></br></br>
-                    <a href="#aboutMe" class="btn btn-primary btn-xl page-scroll">About me</a>
+        <main>
+            <h1 class="titulo-pagina">PLAYGROUND</h1>
+
+
+            <h2 class="content-title" id="calculadora">Calculator</h2>
+            <div class="content" id="calculadora">
+                <p>Insert expression:</p>
+                <input type="text" id="expressao">
+                </br>
+                <button onclick="calcular()" id="button-go"><span style="font-weight: 800;">Calculate</span></button>
+                <button onclick="apagar()" id="button-noGo"><span style="font-weight: 800;">Delete</span></button>
+                </br></br>
+                <div id="resultado"></div>
+            </div>
+
+
+            <div class="playgroung-parallax"></div>
+            <div>
+
+                <h2 class="content-title" id="fotografiaInspiradora">Inspiring Photo</h2></br>
+                <div class="content" id="fotografiaInspiradora">
+                    <div class="image" id="fotografiaInspiradora">
+                        <img src="images/backiee-55764_2.jpg" alt="">
+                        <p id="resultadoTexto"></p>
+                    </div>
+                    <br>
+                    <p>Insert an inspirational phrase ?</p>
+                    <input type="text" id="frase">
                 </div>
             </div>
+            <div class="playgroung-parallax"></div>
+
+            <div>
+
+                <h2 class="content-title" id="locationTitle">Your name in 3 diferent places</h2>
+                <div class="content" id="sitiosdiferentes">
+                    <div>
+                        <p>Tell me your name!</p>
+                        <input type="text" id="insertedName">
+                        </br>
+                        <button onclick="diferentLocations()" id="button-go">
+                            <span style="font-weight: 800;">GO!</span></button>
+                        </br></br>
+                        <div id="hiBellow"></div>
+                        </br></br>
+                        <div id="byeBellow"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playgroung-parallax">
+            </div>
+
+            <div class="content" id="sitiosdiferentes">
+                <h2 class="content-title">Today's date is!</h2>
+                <h3 class="content-title" id="currentDay"></h3>
+            </div>
         </main>
-
-        <article-1 id="aboutMe">
-            <figure class="article-container-photo">
-                <img src="images/MSP&B2.jpg"  style="border-color: #c5962d; border-style: double; border-color: black;">
-            </figure>
-
-            <p class="article-container-text">I am goal driven and client oriented. With both efficacy and efficiency in mind, 
-                I can contribute with appropriate solutions for different business contexts.</p>
-
-                    <div class ="article-container-button"><a href="/images/MIGUELSOARES_RESUME_EN_2023.pdf" target="blank_" class="btn btn-primary btn-xl">RESUME</a>
-                </div> 
-
-        </article-1>
-
-        <article-2 id="projects">
-            <h1 class="titulo-pagina">PROJECTS</h1>
-            <div class="projetos">
-                <div>
-                    <div><img src="images/TP1_Ex1_1.21.jpg" alt=""></div>
-                    <div class="projetos-text">
-                        <p><b>Decision Support Systems</b></p></br>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-                    </div>
-                </div>
-                <div>
-                    <div><img src="images/RC_proj1.png" alt=""></div>
-                    <div class="projetos-text">
-                        <p><b>Computer Networks</b></p></br>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-                    </div>
-                </div>
-                <div>
-                    <div><img src="images/SME_proj.png" alt=""></div>
-                    <div class="projetos-text">
-                        <p><b>Mobile Business Systems</b></p></br>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-                    </div>
-                </div>
-                <div>
-                    <div><img src="images/ES_proj1.png" alt=""></div>
-                    <div class="projetos-text">
-                        <p><b>Software Engineering</b></p></br>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-                    </div>
-                </div>
-                </div>
-        </article-2>
 
         <footer>
             <div class="footer">
@@ -179,8 +166,10 @@
         </footer>
 
     </div>
+
 </body>
 
 <script src="scripts.js"></script>
+
 
 </html>

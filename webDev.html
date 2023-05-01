@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Miguel Soares">
-    <meta name="description" content="Lab 5: Portfólio ">
+    <meta name="description" content="Lab 5: Portfólio - Web development">
     <meta name="keywords" content="palavras chave">
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/x-icon" href="images/MS9.png" sizes="any">
@@ -26,33 +26,35 @@
 </head>
 
 <body>
-    <div class="grid-container">
+    <div class="grid-container-underConstruction">
+        <name class="name-container">
+            <p class="name-style">MIGUEL SOARES</p>
+        </name>
         <menu class="menu-container">
-            <p style="font-family:'Monoton', cursive; color:#c5962d;">MIGUEL SOARES</p>
             <nav>
-
-                <a href="index.html">HOME</a>
-                <a href="/aboutMe.html">ABOUT ME</a>
-                <a href="/projects.html">PROJECTS</a>
-                <a href="/webDev.html">WEB DEV</a>
-                <a href="/blog.html">BLOG</a>
-                <a href="/aboutThisSite.html">ABOUT THIS SITE</a>
+                <a href="/index.html">HOME</a>
                 <div class="dropdown">
                     <button class="dropbtn">
-                      SETTINGS
-
+                        <a href="/index.html#aboutMe">ABOUT ME</a>
                     </button>
                     <div class="dropdown-content">
-                      <a href="#">DARK MODE <i class="fa-solid fa-moon"></i></a>
-                      <a href="#">LIGHT MODE <i class="fa-regular fa-sun"></i></a>
+                        <a href="/index.html#projects">PROJECTS</a>
+                        <a href="/courses.html">COURSES</a>
+                        <a href="/images/MIGUELSOARES_RESUME_EN_2023.pdf" target="blank_">RESUME</a>
                     </div>
-                  </div>
-
-        </nav>
+                </div>
+                <a href="/playground.html">PLAYGROUND</a>
+                <a href="/webDev.html">WEB DEV</a>
+                <a href="/blog.html">BLOG</a>
+                <a href="/about.html">ABOUT</a>
+            </nav>
+            <button><span class="fa-solid fa-moon theme-button" id="darkModeBtn"></span></button>
         </menu>
 
         <main>
-            <h1>WEB DEVELOPMENT</h1>
+            <h1 class="titulo-pagina">WEB DEVELOPMENT</h1>
+        </br></br></br></br>
+        <img src="images/under-construction_geek_man_01.svg" width="100%" height="300px">
         </main>
 
         <footer>
@@ -61,7 +63,7 @@
                     <div class="footer-col-1">
                         <h4 class="footer-header">Useful Links</h4>
                         <ul>
-                            <li><a href="/aboutMe.html">About Me</a></li>
+                            <li><a href="/index.html#aboutMe">About Me</a></li>
                             <li><a href="/siteMap.html">Site Map</a></li>
                             <li><a href="https://www.ulusofona.pt/">U.Lusófona</a></li>
                         </ul>
@@ -85,19 +87,19 @@
                     <div class="footer-col-3">
                         <h4 class="footer-header">Follow Me</h4>
                         <div class="social-links">
-                            <a href="https://www.facebook.com/miguel.soares.12576"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://www.linkedin.com/in/miguel-morais-soares/"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="https://github.com/MiguelMSoares21706025"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.facebook.com/miguel.soares.12576" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/in/miguel-morais-soares/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/MiguelMSoares21706025" target="_blank"><i class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
 
             </div>
            
-
         </footer>
 
     </div>
-    </div>
 </body>
+
+<script src="scripts.js"></script>
 
 </html>
