@@ -9,7 +9,7 @@
     <meta name="author" content="Miguel Soares">
     <meta name="description" content="Lab 5: Portfólio">
     <meta name="keywords" content="palavras chave">
-    <link rel="stylesheet" href="estilos.css">
+    <link id="stylesheet" rel="stylesheet" href="style-light.css">
     <link rel="icon" type="image/x-icon" href="images/MS9.png" sizes="any">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -23,11 +23,13 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa5f8f8cfb.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     
 </head>
 
-<body>
+<body onload="loadStyle()">
     <div class="grid-container-hero">
         <name class="name-container">
             <p class="name-style">MIGUEL SOARES</p>
@@ -51,7 +53,7 @@
                 <a href="/blog.html">BLOG</a>
                 <a href="/about.html">ABOUT</a>
             </nav>
-            <button><span class="fa-solid fa-moon theme-button" id="darkModeBtn"></span></button>
+            <button><span class="material-symbols-outlined" id="darkModeBtn">clear_day</span></button>
         </menu>
 
         <main class="backgroung-image">
@@ -81,7 +83,7 @@
             <h1 class="titulo-pagina">PROJECTS</h1>
             <div class="projetos">
                 <div>
-                    <div><img src="images/TP1_Ex1_1.21.jpg" alt=""></div>
+                    <div><img src="images/TFC.png" alt=""></div>
                     <div class="projetos-text">
                         <p><b>Decision Support Systems</b></p></br>
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

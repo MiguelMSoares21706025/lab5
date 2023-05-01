@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Miguel Soares">
-    <meta name="description" content="Lab 5: Portfólio -About me">
+    <meta name="description" content="Lab 5: Portfólio">
     <meta name="keywords" content="palavras chave">
-    <link rel="stylesheet" href="estilos.css">
+    <link id="stylesheet" rel="stylesheet" href="style-light.css">
     <link rel="icon" type="image/x-icon" href="images/MS9.png" sizes="any">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -23,9 +23,11 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa5f8f8cfb.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
-<body>
+<body onload="loadStyle()">
     <div class="grid-container">
         <name class="name-container">
             <p class="name-style">MIGUEL SOARES</p>
@@ -35,9 +37,10 @@
                 <a href="/index.html">HOME</a>
                 <div class="dropdown">
                     <button class="dropbtn">
-                        <a href="/index.html#aboutMe">ABOUT ME</a>
+                        <a href="#">ABOUT ME</a>
                     </button>
                     <div class="dropdown-content">
+                        <a href="/index.html#aboutMe">ABOUT ME HOME</a>
                         <a href="/index.html#projects">PROJECTS</a>
                         <a href="/courses.html">COURSES</a>
                         <a href="/images/MIGUELSOARES_RESUME_EN_2023.pdf" target="blank_">RESUME</a>
@@ -48,7 +51,7 @@
                 <a href="/blog.html">BLOG</a>
                 <a href="/about.html">ABOUT</a>
             </nav>
-            <button><span class="fa-solid fa-moon theme-button" id="darkModeBtn"></span></button>
+            <button><span class="material-symbols-outlined" id="darkModeBtn">clear_day</span></button>
         </menu>
 
         <main>
@@ -56,16 +59,19 @@
             <h3>Academic courses</h3>
             <div class="courses-lists">
                 <ul>
-                    <li>Information Technology Management || 2023</li>
+                    <li>Bachelor in Information Technology Management || 2023</li>
                 </ul>
             </div>
                 <table class="courses-tables"id="tables" border="0">
                         <tr>
-                            <th width="400px" height="30px" >Class from course</th>
-                            <th width="50px" height="30px">Year</th>
-                            <th width="90px" height="30px">Semester</th>
-                            <th width="50px" height="30px">Ects</th>
-                            <th width="50px" height="30px">Grade</th>
+                            <th width="300px" height="30px" >Class from course</th>
+                            <th width="40px" height="30px">Year</th>
+                            <th width="80px" height="30px">Semester</th>
+                            <th width="45px" height="30px">Ects</th>
+                            <th width="105px" height="30px">Scholar year</th>
+                            <th width="70px" height="30px">Teacher</th>
+                            <th width="70px" height="30px">Ranking</th>
+                            <th width="60px" height="30px">Grade</th>
                         </tr>
                         <!--1ºANO 1ºSEMESTRE-->
                         <tr>
@@ -74,12 +80,18 @@
                             <td>1</td>
                             <td>6</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Information Technology Management</td>
                             <td>1</td>
                             <td>1</td>
                             <td>7</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
@@ -88,6 +100,9 @@
                             <td>1</td>
                             <td>6</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Programming Fundamentals</td>
@@ -95,12 +110,18 @@
                             <td>1</td>
                             <td>6</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Theory and Practice of Marketing</td>
                             <td>1</td>
                             <td>1</td>
                             <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
                         <!--1ºANO 2ºSEMESTRE-->
@@ -110,12 +131,18 @@
                             <td>2</td>
                             <td>4</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Business Metrics</td>
                             <td>1</td>
                             <td>2</td>
                             <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
@@ -124,12 +151,18 @@
                             <td>2</td>
                             <td>5</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Mathematics II</td>
                             <td>1</td>
                             <td>2</td>
                             <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
@@ -138,12 +171,18 @@
                             <td>2</td>
                             <td>6</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Computer Architecture</td>
                             <td>1</td>
                             <td>2</td>
                             <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
                         <!--2ºANO 1ºSEMESTRE-->
@@ -153,12 +192,18 @@
                             <td>1</td>
                             <td>6</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Management Instruments</td>
                             <td>2</td>
                             <td>1</td>
                             <td>6</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
@@ -167,6 +212,9 @@
                             <td>1</td>
                             <td>6</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Operational Research</td>
@@ -174,12 +222,18 @@
                             <td>1</td>
                             <td>6</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Programming Languages II</td>
                             <td>2</td>
                             <td>1</td>
                             <td>6</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
                         <!--2ºANO 2ºSEMESTRE-->
@@ -189,12 +243,18 @@
                             <td>2</td>
                             <td>6</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Decision Support Systems</td>
                             <td>2</td>
                             <td>2</td>
                             <td>6</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
@@ -203,6 +263,9 @@
                             <td>2</td>
                             <td>6</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Analysis and Systems Design</td>
@@ -210,12 +273,18 @@
                             <td>2</td>
                             <td>6</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Web Programming</td>
                             <td>2</td>
                             <td>2</td>
                             <td>6</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
                         <!--3ºANO 1ºSEMESTRE-->
@@ -225,12 +294,18 @@
                             <td>1</td>
                             <td>5</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Human-Machine Interaction</td>
                             <td>3</td>
                             <td>1</td>
                             <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
@@ -239,12 +314,18 @@
                             <td>1</td>
                             <td>5</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Software Engrineering</td>
                             <td>3</td>
                             <td>1</td>
                             <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
                         <!--3ºANO 2ºSEMESTRE-->
@@ -254,12 +335,18 @@
                             <td>2</td>
                             <td>5</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Cloud information Systems</td>
                             <td>3</td>
                             <td>2</td>
                             <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
@@ -268,12 +355,18 @@
                             <td>2</td>
                             <td>4</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Management Control</td>
                             <td>3</td>
                             <td>2</td>
                             <td>3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
@@ -282,6 +375,9 @@
                             <td>2</td>
                             <td>3</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
 
                         <tr>
@@ -289,6 +385,9 @@
                             <td>3</td>
                             <td>1 e 2</td>
                             <td>20</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
                 </table>

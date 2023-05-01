@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', getDate);
 
 
 /*THEME SCRIPT*/
-const darkModeButton = document.querySelector('#darkModeBTN');
+const darkModeButton = document.querySelector('#darkModeBtn');
 
 function loadStyle() {
     const darkModeStat = localStorage.getItem("darkModeStat");
@@ -64,17 +64,16 @@ function loadStyle() {
 
 function setDarkMode() {
     document.getElementById("stylesheet").href = "style-dark.css";
-    document.getElementById("darkModeBTN").textContent="dark_mode";
-    var vid = document.getElementById("myVideo");
-    vid.src = "source/10mb preto.mp4";
+    document.getElementById("darkModeBtn").textContent="nightlight";
+
 }
 
 function setLightMode() {
     document.getElementById("stylesheet").href = "style-light.css";
-    document.getElementById("darkModeBTN").textContent="light_mode";
-    var vid = document.getElementById("myVideo");
-    vid.src = "source/10mb branco.mp4";
+    document.getElementById("darkModeBtn").textContent="clear_day";
+
 }
+
 
 darkModeButton.addEventListener('click', function () {
     const darkModeStat = localStorage.getItem("darkModeStat");

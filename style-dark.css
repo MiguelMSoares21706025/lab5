@@ -1,6 +1,7 @@
 * {
     /*universal*/
     font-family: 'Montserrat', sans-serif;
+    color:#E6E6FA;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -30,7 +31,7 @@ menu {
 
 main {
     grid-area: main;
-    background-color: whitesmoke;
+    background-color: #212121;
     position: relative;
     background-size: cover;
     margin: 0px;
@@ -41,7 +42,7 @@ main {
 
 article-1 {
     grid-area: article1;
-    background-color: rgb(197, 150, 45, 0.8);
+    background-color: #303030;
     position: relative;
     background-size: cover;
     margin: 0px;
@@ -53,7 +54,7 @@ article-1 {
 
 article-2 {
     grid-area: article2;
-    background-color: whitesmoke;
+    background-color: #212121;
     position: relative;
     background-size: cover;
     margin: 0px;
@@ -175,7 +176,7 @@ right2 {
 .menu-container {
     font-size: 1.8rem;
     top: 0;
-    padding: 1%;
+    padding: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,6 +187,7 @@ right2 {
 .menu-container nav {
     display: flex;
     justify-content: flex-end;
+    padding: auto;
 }
 
 nav a {
@@ -193,11 +195,11 @@ nav a {
     text-decoration: none;
     font-size: 0.8rem;
     font-weight: 600;
-    color: whitesmoke;
+    color: #E6E6FA;
 }
 
 a:hover {
-    color: #c5962d;
+    color: #9370DB;
 }
 
 .dropdown {
@@ -209,10 +211,9 @@ a:hover {
     padding: 20px;
     text-decoration: none;
     font-size: 0.8rem;
-    color: whitesmoke;
+    color: #E6E6FA;
     border: none;
     outline: none;
-    color: whitesmoke;
     background-color: inherit;
 }
 
@@ -229,7 +230,7 @@ a:hover {
 .dropdown-content a {
     font-size: 0.8rem;
     float: none;
-    color: whitesmoke;
+    color: #E6E6FA;
     padding: 6px 25px;
     text-decoration: none;
     display: block;
@@ -237,7 +238,7 @@ a:hover {
 }
 
 .dropdown-content a:hover {
-    color: #c5962d;
+    color: #9370DB;
 }
 
 .dropdown:hover .dropdown-content {
@@ -254,20 +255,22 @@ a:hover {
 }
 
 #darkModeBtn {
-    color: whitesmoke;
+    color:#E6E6FA;
+    background-color: #222324;
+    border-color: #222324;
     border-radius: 0;
-    padding: 1px;
+    padding: 7px;
     margin: 0;
 }
 
 #darkModeBtn:hover {
-    color: #c5962d;
-    ;
+    color: #9370DB;
+    border-color: #9370DB;
 }
 
 .name-style {
     font-family: 'Monoton', cursive;
-    color: #c5962d;
+    color: #9370DB
 }
 
 .backgroung-image {
@@ -278,7 +281,7 @@ a:hover {
 .motivational_header {
     position: absolute;
     width: 40%;
-    color: whitesmoke;
+    color: #E6E6FA;
     top: 20vh;
     left: 5vw;
     padding: 20px;
@@ -288,7 +291,7 @@ a:hover {
 .motivational_text {
     position: absolute;
     width: 100%;
-    color: whitesmoke;
+    color: #E6E6FA;
     font-size: 1rem;
     margin-top: 40px;
 }
@@ -298,7 +301,7 @@ a:hover {
     position: absolute;
     left: 0;
     top: -20px;
-    background-color: #c5962d;
+    background-color: #9370DB;
     height: 3px;
     box-sizing: border-box;
     width: 90px;
@@ -322,7 +325,7 @@ a:hover {
     position: absolute;
     left: 47.5%;
     bottom: -15%;
-    background-color: #c5962d;
+    background-color: #9370DB;
     height: 3px;
     box-sizing: border-box;
     width: 5%;
@@ -383,8 +386,8 @@ article-2 titulo-pagina {
 }
 
 .btn-primary {
-    border-color: #c5962d;
-    color: whitesmoke;
+    border-color: #9370DB;
+    color: #E6E6FA;
     text-decoration: none;
     background-color: #222324;
 }
@@ -410,7 +413,7 @@ article-2 titulo-pagina {
 }
 
 .footer-header {
-    color: whitesmoke;
+    color: #E6E6FA;
     display: flex;
     flex-wrap: wrap;
     width: auto;
@@ -424,7 +427,7 @@ article-2 titulo-pagina {
 }
 
 footer div p {
-    color: whitesmoke;
+    color: #E6E6FA;
     margin-bottom: 6px;
     text-align: left;
     font-size: 0.8rem;
@@ -444,14 +447,14 @@ footer ul {
     display: block;
     float: none;
     text-decoration: none;
-    color: whitesmoke;
+    color: #E6E6FA;
     margin-bottom: 5px;
     text-align: left;
     font-size: 0.8rem;
 }
 
 .footer-col-1 a:hover {
-    color: #c5962d;
+    color: #9370DB;
 }
 
 .footer-col-2 {
@@ -464,6 +467,7 @@ footer ul {
     width: auto;
     height: auto;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .footer-col-3 a {
@@ -471,6 +475,7 @@ footer ul {
     color: whitesmoke;
     padding: 5px 10px;
     text-decoration: none;
+    text-align: left;
 }
 
 .footer-col-3 .social-links {
@@ -487,12 +492,12 @@ footer ul {
     line-height: 30px;
     border-radius: 50px;
     color: #ffffff;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .footer-col-3 .social-links a:hover {
     color: #222324;
-    background-color: #c5962d;
+    background-color: #9370DB;
 }
 
 .sitemap_image {
@@ -506,29 +511,30 @@ footer ul {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: space-around;
-    background-color: whitesmoke;
+    background-color: 303030;
     padding: 50px 0;
-    border-radius: 20px 20px 20px 20px;
+
 }
 
 .projetos>div {
-    background-color: white;
+    background-color: #424242;
     display: flex;
     justify-content: left;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px 2px #888888;
+
     margin: 10px;
 }
 
 .projetos img {
-    border-radius: 20px 0 0 20px;
+    background-color:#424242;
+    border-radius: 5px 0 0 5px;
     height: 100%;
 }
 
 .projetos div div:last-child {
     width: 500px;
-    background-color: white;
-    border-radius: 0 20px 20px 0;
+    background-color:#424242;
+
 }
 
 .projetos-text {
@@ -546,7 +552,7 @@ h3 {
     font-size: 1.2rem;
     height: auto;
     text-align: left;
-    margin-left: 300px;
+    margin-left: 260px;
     margin-top: 10px;
     display: flex;
 
@@ -557,7 +563,7 @@ h3 {
     height: auto;
     width: auto;
     text-align: left;
-    margin-left: 300px;
+    margin-left: 270px;
     margin-top: 10px;
     margin-bottom: 20px;
     display: flex;
@@ -565,13 +571,13 @@ h3 {
 }
 
 #tables tr {
-    background-color: white;
+    background-color: #303030;
     height: 25px;
 }
 
 #tables tr:nth-child(1) {
-    background-color: #c5962d;
-    color: white;
+    background-color: #4B0082;
+    color: #E6E6FA;
     font-size: 1rem;
     text-align: center;
 }
@@ -584,9 +590,6 @@ h3 {
     text-align: left;
 }
 
-#tables tr:hover {
-    background-color: #ddd;
-}
 
 .specialHeader {
     font-weight: 900;
@@ -598,40 +601,13 @@ div.playgroung-parallax {
 }
 
 .playgroung-parallax {
-    background-image: url(/images/backiee-55764.jpg);
+    background-image: url(/images/ocean3.jpg);
     opacity: 1;
-    min-height: 60px;
+    min-height: 70px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.playgroung-parallax2 {
-    background-image: url(images/HERO_Paradise-Beach_cancun.jpg);
-    min-height: 350px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px 30px 0px 30px;
-}
-
-.playgroung-parallax3 {
-    background-image: url(images/ruinas_1.jpg);
-    min-height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px 30px 0px 30px;
-}
-
-.playgroung-parallax4 {
-    background-image: url(images/night_restaurant.jpg);
-    min-height: 800px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px 30px 30px 30px;
 }
 
 .content-title {
@@ -661,6 +637,9 @@ div.playgroung-parallax {
     justify-content: space-between;
 }
 
+.input {
+    background-color: #303030;
+}
 
 #fotografiaInspiradora {
     height: fit-content;
@@ -673,7 +652,7 @@ div.playgroung-parallax {
     position: absolute;
     top: 20px;
     left: 20px;
-    color: whitesmoke;
+    color: #E6E6FA;
     font-size: 1.8rem;
     font-weight: 800;
     text-shadow: 2px 2px 5px black;
@@ -692,15 +671,15 @@ div.playgroung-parallax {
 }
 
 #button-go {
-    background-color: #c5962d;
-    border-color: #c5962d;
+    background-color: #222324;
+    border-color: #9370DB;
     border-radius: 5px 5px;
     padding: 5px;
     margin: 8px 0 0 8px;
 }
 
 #button-noGo {
-    background-color: gainsboro;
+    background-color: grey;
     border-color: gainsboro;
     border-radius: 5px 5px;
     padding: 5px;
@@ -853,7 +832,7 @@ div.playgroung-parallax {
 
     .name-container {
         background-color: #222324;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         top: 0;
         padding: 1%;
         display: flex;
@@ -862,18 +841,20 @@ div.playgroung-parallax {
     }
 
     .menu-container {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         top: 0;
-        padding: 1%;
+        padding: .7%;
         display: flex;
         justify-content: center;
         align-items: center;
-        justify-content: space-evenly;
+        text-align: center;
+        justify-content: space-between;
     }
 
     .menu-container nav {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
 
     }
+    
 }

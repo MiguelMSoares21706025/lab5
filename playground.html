@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Miguel Soares">
-    <meta name="description" content="Lab 5: Portfólio - Web development">
+    <meta name="description" content="Lab 5: Portfólio">
     <meta name="keywords" content="palavras chave">
-    <link rel="stylesheet" href="estilos.css">
+    <link id="stylesheet" rel="stylesheet" href="style-light.css">
     <link rel="icon" type="image/x-icon" href="images/MS9.png" sizes="any">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -23,9 +23,11 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa5f8f8cfb.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
-<body>
+<body onload="loadStyle()">
     <div class="grid-container">
         <name class="name-container">
             <p class="name-style">MIGUEL SOARES</p>
@@ -35,9 +37,10 @@
                 <a href="/index.html">HOME</a>
                 <div class="dropdown">
                     <button class="dropbtn">
-                        <a href="/index.html#aboutMe">ABOUT ME</a>
+                        <a href="#">ABOUT ME</a>
                     </button>
                     <div class="dropdown-content">
+                        <a href="/index.html#aboutMe">ABOUT ME HOME</a>
                         <a href="/index.html#projects">PROJECTS</a>
                         <a href="/courses.html">COURSES</a>
                         <a href="/images/MIGUELSOARES_RESUME_EN_2023.pdf" target="blank_">RESUME</a>
@@ -48,7 +51,7 @@
                 <a href="/blog.html">BLOG</a>
                 <a href="/about.html">ABOUT</a>
             </nav>
-            <button><span class="fa-solid fa-moon theme-button" id="darkModeBtn"></span></button>
+            <button><span class="material-symbols-outlined" id="darkModeBtn">clear_day</span></button>
         </menu>
 
         <main>
@@ -58,7 +61,7 @@
             <h2 class="content-title" id="calculadora">Calculator</h2>
             <div class="content" id="calculadora">
                 <p>Insert expression:</p>
-                <input type="text" id="expressao">
+                <input type="text" id="expressao" class="input">
                 </br>
                 <button onclick="calcular()" id="button-go"><span style="font-weight: 800;">Calculate</span></button>
                 <button onclick="apagar()" id="button-noGo"><span style="font-weight: 800;">Delete</span></button>
@@ -73,12 +76,12 @@
                 <h2 class="content-title" id="fotografiaInspiradora">Inspiring Photo</h2></br>
                 <div class="content" id="fotografiaInspiradora">
                     <div class="image" id="fotografiaInspiradora">
-                        <img src="images/backiee-55764_2.jpg" alt="">
+                        <img src="images/ocean31.jpg" alt="">
                         <p id="resultadoTexto"></p>
                     </div>
                     <br>
                     <p>Insert an inspirational phrase ?</p>
-                    <input type="text" id="frase">
+                    <input type="text" id="frase"class="input">
                 </div>
             </div>
             <div class="playgroung-parallax"></div>
@@ -89,7 +92,7 @@
                 <div class="content" id="sitiosdiferentes">
                     <div>
                         <p>Tell me your name!</p>
-                        <input type="text" id="insertedName">
+                        <input type="text" id="insertedName" class="input">
                         </br>
                         <button onclick="diferentLocations()" id="button-go">
                             <span style="font-weight: 800;">GO!</span></button>
